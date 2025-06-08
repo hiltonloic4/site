@@ -1,28 +1,26 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html>
 	<head>
 		<meta charset="utf-8" />
 		<title> Accueil </title>
+		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-<link rel="stylesheet" href="style.css">
 
-<form action="/upload" method="POST" enctype="multipart/form-data">
-  <label for="text">Nom du défi photo :</label>
-  <textarea id="text" name="text" required></textarea>
-  
-  <label for="image">Photo :</label>
-  <input type="file" id="image" name="image" accept="image/*" required>
-  
-  <button type="submit">Soumettre</button>
-</form>
+	<form action="/upload" method="POST" enctype="multipart/form-data">
+	  <label for="text">Nom du défi photo :</label>
+	  <textarea id="text" name="text" required></textarea>
+	  
+	  <label for="image">Photo :</label>
+	  <input type="file" id="image" name="image" accept="image/*" required>
+	  
+	  <button type="submit">Soumettre</button>
+	</form>
 
+	<!-- Bouton de retour à la page 'invite' -->
+	<form action="invite.html" method="get">
+	  <button type="submit">Retour à la page invite</button>
+	</form>
 
-
-</ul>
-	
-	
-    </body>
+	</body>
 </html>
-
-
