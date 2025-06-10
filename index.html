@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Photos faites par les invités</title>
   <style>
     body {
@@ -15,7 +16,7 @@
     .container {
       max-width: 800px;
       margin: 60px auto;
-      padding: 20px;
+      padding: 30px 20px;
       background-color: white;
       border-radius: 12px;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -24,7 +25,7 @@
     h1 {
       color: #333;
       font-size: 2em;
-      margin-bottom: 30px;
+      margin-bottom: 25px;
     }
 
     img {
@@ -33,13 +34,16 @@
       height: auto;
       border-radius: 8px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
     }
 
     .btn {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 12px 24px;
-      font-size: 16px;
+      display: block;
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto;
+      padding: 14px 20px;
+      font-size: 18px;
       background-color: #007bff;
       color: white;
       border: none;
@@ -54,9 +58,18 @@
     }
 
     @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5em;
+      }
+
       .container {
         margin: 30px 10px;
-        padding: 15px;
+        padding: 20px 15px;
+      }
+
+      .btn {
+        font-size: 16px;
+        padding: 12px;
       }
     }
   </style>
@@ -66,7 +79,6 @@
   <div class="container">
     <h1>Photos faites par les invités</h1>
 
-   
     <img src="f40 site.png" alt="Photo prise par un invité">
 
     <form action="ajout photos.html" method="get">
