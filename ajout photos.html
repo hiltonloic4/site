@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ajouter une photo</title>
   <style>
     body {
@@ -14,8 +15,8 @@
 
     .container {
       max-width: 500px;
-      margin: 80px auto;
-      padding: 30px;
+      margin: 60px auto;
+      padding: 30px 20px;
       background-color: white;
       border-radius: 12px;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
@@ -24,14 +25,16 @@
     h2 {
       font-size: 24px;
       color: #333;
-      margin-bottom: 30px;
+      margin-bottom: 25px;
     }
 
     .btn {
-      display: inline-block;
-      margin: 15px 0;
-      padding: 12px 24px;
-      font-size: 16px;
+      display: block;
+      width: 100%;
+      max-width: 300px;
+      margin: 15px auto;
+      padding: 14px 20px;
+      font-size: 18px;
       background-color: #007bff;
       color: white;
       border: none;
@@ -45,8 +48,20 @@
       background-color: #0056b3;
     }
 
-    form {
-      margin-top: 10px;
+    @media (max-width: 480px) {
+      h2 {
+        font-size: 20px;
+      }
+
+      .btn {
+        font-size: 16px;
+        padding: 12px;
+      }
+
+      .container {
+        margin: 40px 10px;
+        padding: 20px 15px;
+      }
     }
   </style>
 </head>
@@ -55,15 +70,13 @@
   <div class="container">
     <h2>Ajouter une photo :</h2>
 
-    <!-- Bouton vers Google Forms -->
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSdsSNKip3sjH0eoBG668lhKmtaACBFx2wd-p6xeyygYSc-nOg/viewform?usp=header"
        target="_blank"
        class="btn">
        Ouvrir le formulaire
     </a>
 
-    <!-- Bouton retour dans le même bloc -->
-    <form action="index.html" method="get">
+    <form action="invités.html" method="get">
       <button type="submit" class="btn">Retour à la page d'accueil</button>
     </form>
   </div>
