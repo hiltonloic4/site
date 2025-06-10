@@ -1,31 +1,44 @@
-<!DOCTYPE html> 
-<html>
+<!DOCTYPE html>
+<html lang="fr">
 <head>
   <meta charset="utf-8" />
   <title>Ajouter une photo</title>
-  <link rel="stylesheet" href="style.css">
   <style>
     body {
       font-family: Arial, sans-serif;
+      background-color: #f0f4f8;
+      margin: 0;
+      padding: 0;
       text-align: center;
-      padding: 40px;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 80px auto;
+      padding: 30px;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
     }
 
     h2 {
+      font-size: 24px;
+      color: #333;
       margin-bottom: 30px;
     }
 
     .btn {
       display: inline-block;
-      padding: 10px 20px;
+      margin: 15px 0;
+      padding: 12px 24px;
+      font-size: 16px;
       background-color: #007bff;
       color: white;
-      text-decoration: none;
-      border-radius: 5px;
       border: none;
-      font-size: 16px;
+      border-radius: 6px;
       cursor: pointer;
-      margin: 15px 0;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
     }
 
     .btn:hover {
@@ -33,24 +46,27 @@
     }
 
     form {
-      margin-top: 20px;
+      margin-top: 10px;
     }
   </style>
 </head>
 <body>
 
-  <h2>Ajouter une photo :</h2>
+  <div class="container">
+    <h2>Ajouter une photo :</h2>
 
-  <!-- Lien vers le formulaire Google Forms sous forme de bouton -->
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdsSNKip3sjH0eoBG668lhKmtaACBFx2wd-p6xeyygYSc-nOg/viewform?usp=header" 
-     target="_blank" class="btn">
-    Ouvrir le formulaire
-  </a>
+    <!-- Bouton vers Google Forms -->
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdsSNKip3sjH0eoBG668lhKmtaACBFx2wd-p6xeyygYSc-nOg/viewform?usp=header"
+       target="_blank"
+       class="btn">
+       Ouvrir le formulaire
+    </a>
 
-  <!-- Bouton pour revenir à la page d'accueil -->
-  <form action="invités.html" method="get">
-    <button type="submit" class="btn">Retour à la page d'accueil</button>
-  </form>
+    <!-- Bouton retour dans le même bloc -->
+    <form action="invités.html" method="get">
+      <button type="submit" class="btn">Retour à la page d'accueil</button>
+    </form>
+  </div>
 
 </body>
 </html>
